@@ -1,0 +1,53 @@
+# -*- coding: utf-8 -*-
+
+import smtplib
+import email
+from email import Encoders
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+
+def send_mail(subject, text, from_email_box, to_email_box, files=None):
+        """
+        Generic send email function to email with attachments
+
+        Input: from, to, subject, text, files, server
+
+        Return: Boolean - True if works
+        """
+
+        mail_stmp_server = ""
+
+        msg = MIMEMultipart()
+        msg['From'] = from_email_box
+        msg['To'] = to_email_box        
+        msg['Subject'] = "New Intel Dashboard"
+        html = """hhi
+        """
+
+        msg.attach(MIMEText(html, 'html'))
+
+        mailServer = smtplib.SMTP(mail_stmp_server, 25)
+        mailServer.ehlo()
+        mailServer.sendmail(
+            from_email_box,
+            to_email_box,
+            msg.as_string())
+        mailServer.close()
+        return True
+
+
+send_mail("",
+            str("test"),
+            "",
+            "",
+            None)
+    
+    # Error out more gracefully 
+    # emailError('Failed to load DAST Dates')
+
+    
+
+
+
+
