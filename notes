@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <stdio.h>  // for _popen() and _pclose()
+using namespace std;
+#include <fstream>
+
+int main()
+{
+	char buff[512];
+	buff[0] = 0;
+	string cmd = "whoami";
+	FILE* fpipe = _popen(cmd.c_str(), "r");
+	while (fgets(buff, sizeof(buff), fpipe) != NULL) cout << buff << endl;
+	_pclose(fpipe);
+
+
+	//writing to a file
+	ofstream myfile;
+	myfile.open("result.txt");
+	myfile << buff;
+	myfile.close();
+	return 0;
+}
