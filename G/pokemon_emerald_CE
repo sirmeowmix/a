@@ -1,0 +1,126 @@
+*********************************************************************
+-----------byte array search while looking at moves (not fighting)
+-----example 
+-----double team 12/15, confusion 25/25    array hex byte search will be: "68 00 5D" or "104 00 93" for non hex
+-----psybeam 3/10, tackle
+----------------------------------------
+---LOOKING FOR THE VALUES OF PP'S
+---bytebytebyte example array byte search: "12 25 3"
+
+(Enemy health) array (06 06 06 06 06 06 06 06), "8 70"
+
+
+
+************
+*Moves ID's*
+************
+byte**
+01 = pound (Normal)
+02 = karate chop (FIGHT)
+03 = double slap (Normal)
+04 = comet punch (Normal)
+05 = mega punch (Normal)
+06 = pay day (Normal)
+07 = fire punch
+08 = ice punch
+09 = thunder punch
+10 = scratch	(N)
+11 = vicegrip	(N)
+12 = guillotine (N)
+13 = Razor wind (n)
+14 = Sword Dance (n)
+15 = cut (N)
+16 = gust (Flying)
+17 = Wing Attack (Flying)
+18 = whirlwind
+19 = fly 
+20 = BIND
+21 = Slam
+22 = vine whip
+23 = stomp
+24 = double kick
+25 = mega kick
+26 = jump kick
+27 = rolling kick
+28 = sand-attack
+29 = headbutt
+30 = horn attack
+31 = fury attack
+32 = horn drill
+33 = tackle	(N)
+48 = supersonic
+49 = sonicboom
+50 = disable
+51 = acid
+52 = ember
+53 = flamethrower
+54 = mist
+55 = watergun
+56 = hydropump
+57 = surf
+58 = ice beam
+59 = blizzard
+60 = psybeam
+61 = bubblebeam
+62 = aurorabeam
+63 = hyperbeam
+64 = peck
+65 = drill  peck
+66 = submission
+67 = low kick
+68 = counter
+69 = seismic toss
+70 = strength
+71 = absorb
+72 = mega drain
+73 = leech seed
+74 = growth
+75 = razor leaf
+76 = solarbeam
+77 = poisonpowder
+78 = stun spore
+79 = sleep powder
+80 = petal dance
+81 = string shot
+82 = dragon rage
+83 = fire spin
+84 = thundershock
+85 = thunderbolt
+86 = thunder wave
+87 = thunder
+88 = rock throw
+89 = earthquake
+90 = fissure
+91 = dig
+92 = toxic
+93 = confusion (5D)
+94 = psychic
+95 = hypnosis
+96 = medidate
+97 = agility
+98 = quick attack
+99 = rage
+100 = teleport
+101 = night shade
+102 = mimic
+103 = screech
+104 = double team (68)
+
+106 = harden
+141 = leechlife
+148 = flash
+150 = splash
+189 = mudslap
+
+
+
+***************
+*Pokeball ID's*
+***************
+byte**
+01 = masterball
+02 = ultraball
+03 = greatball
+04 = pokeball
+05 = safari ball
+12 = premier ball
