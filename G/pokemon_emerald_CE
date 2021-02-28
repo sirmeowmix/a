@@ -1,18 +1,16 @@
 *********************************************************************
 -----------byte array search while looking at moves (not fighting)
------example 
------double team 12/15, confusion 25/25    array hex byte search will be: "68 00 5D" or "104 00 93" for non hex
------psybeam 3/10, tackle
-----------------------------------------
----LOOKING FOR THE VALUES OF PP'S
----bytebytebyte example array byte search: "12 25 3"
-
-(Enemy health) array (06 06 06 06 06 06 06 06), "8 70"
-
+***************************************
+***************EXAMPLE***************** 
+***************************************
+*double team 12/15** confusion 25/25  *  array hex byte search will be: "68 00 5D" or "104 00 93" for non hex
+*sybeam       3/10** tackle           *
+***************************************
+---LOOKING FOR THE VALUES OF PP'S (bytebytebyte) example array byte search: "12 25 3"
 
 
 ************
-*Moves ID's*
+*Moves ID's* https://bulbapedia.bulbagarden.net/wiki/List_of_moves_by_availability_(Generation_VIII)
 ************
 byte**
 1 Pound
