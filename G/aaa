@@ -1,0 +1,2 @@
+https://github.com/Neo23x0/signature-base/blob/master/yara/apt_hafnium.yar
+https://github.com/SigmaHQ/sigma/blob/master/rules/web/web_exchange_exploitation_hafnium.yml
