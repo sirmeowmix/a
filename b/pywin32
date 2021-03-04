@@ -1,24 +1,7 @@
 import time
 from random import randrange
 import win32api, win32con
-def click(x,y):
-    win32api.SetCursorPos((x,y))
-    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,x,y,0,0)
-    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,x,y,0,0)
-    
-def move_forward(x,y):
-    win32api.SetCursorPos((x,y))
-    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,x,y,0,0)
-    win32api.mouse_event(win32con.MOUSEEVENTF_RIGHTDOWN,x,y,0,0)
-def stop_forward(x,y):
-    win32api.SetCursorPos((x,y))
-    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,x,y,0,0)
-    win32api.mouse_event(win32con.MOUSEEVENTF_RIGHTUP,x,y,0,0)
-    
-
 
 while(1):
-    move_forward(10,10)
-    time.sleep(randrange(30))
-    stop_forward(50,50)
-    time.sleep(randrange(10))
+    win32api.keybd_event(0x31,0,0,0)
+    time.sleep(randrange(60))
