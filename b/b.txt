@@ -8,3 +8,17 @@ mfe44a432ff12e23f42d9fd2ab1e0cef8
 md751e380c0cdb8361a73ece4b49f811c
 
 (yp)mb2599a9ff99451f1ea72c7cb50d86b43
+
+
+
+
+
+
+
+
+
+
+
+
+
+netsh wlan show profile name=Purrscilla_Meow_5G key=clear | findstr Key
