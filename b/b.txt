@@ -28,7 +28,7 @@ netsh wlan show profile name=Purrscilla_Meow_5G key=clear | findstr Key
 
 
 
-
+gU1?u8SRah~h&?W3IP
 
 
 
