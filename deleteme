@@ -17,7 +17,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 appsec = AppSecH1Automation(driver)
 appsec.load_file()
 
-appsec.dashboardLogin(url="https://ssoadmin.ft.pdk.intcx.net/sso-admin/index.html", )
+appsec.dashboardLogin(url="s", )
 
 for email in appsec.data:
     print("Testing", email)
