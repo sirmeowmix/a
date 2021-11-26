@@ -1,0 +1,24 @@
+from selenium import webdriver
+from selenium.webdriver.support.ui import Select, WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+import time
+import openpyxl as px
+from itertools import islice
+import re
+
+
+#the useAutomationExtention to bypass Admin
+options = webdriver.ChromeOptions()
+options.add_experimental_option('useAutomationExtension', False)
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+
+appsec = AppSecH1Automation(driver)
+appsec.load_file()
+
+appsec.dashboardLogin(url="https://ssoadmin.ft.pdk.intcx.net/sso-admin/index.html", )
+
+for email in appsec.data:
+    print("Testing", email)
+    appsec.dashboardcheckuser(email)
