@@ -1,6 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-  <script>
-    alert('If you see this, something is VERY wrong');
-  </script>
-  <text x="10" y="20">Testing SVG Script Blocking</text>
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rectangle background -->
+  <rect width="200" height="100" fill="#ddeeff" />
+
+  <!-- Embedded HTML -->
+  <foreignObject x="10" y="10" width="180" height="80">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <div style="font-size:16px; color: #333; border: 1px solid #888; padding:5px;">
+        Hello, this is HTML inside an SVG!
+      </div>
+    </body>
+  </foreignObject>
 </svg>
